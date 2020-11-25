@@ -8,6 +8,7 @@ export class ServerComponent {
     serverId = 11110;
     serverStatus = 'offline';
 
+    /*
     getServerStatus() {
         if (Math.random() < 0.5) {
             this.serverStatus = 'offline';
@@ -23,4 +24,5 @@ export class ServerComponent {
             return this.serverStatus;
         }
     }
+    */
 }

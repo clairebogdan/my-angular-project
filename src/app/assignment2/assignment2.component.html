@@ -1,0 +1,14 @@
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="username">
+
+<p>{{ username }} is your username. If you would like to change it, backspace or 
+    click the Reset button
+</p>
+<button 
+    class="btn btn-primary"
+    [disabled]="!checkUsername()"
+    (click)="resetUsername()">
+    Reset
+</button>
