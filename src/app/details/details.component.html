@@ -1,0 +1,17 @@
+<div class="container">
+    <button 
+        class="btn btn-primary"
+        (click)="onToggle()">
+        Toggle Details
+    </button>
+    <p 
+        class="secret"
+        *ngIf="showDetails">
+        HERE IS ALL THE SECRET STUFF :O
+    </p>
+    <h5>Logs:</h5>
+    <div 
+        *ngFor="let l of log; let i = index"
+        [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': i >= 4}">{{ l }}</div>
+</div>
